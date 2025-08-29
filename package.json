@@ -12,6 +12,7 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist",
     "deploy:github": "cross-env GITHUB_PAGES=true npm run build && gh-pages -d dist",
+    "build:docs": "cross-env DOCS_DEPLOY=true npm run build && Copy-Item -Recurse -Force dist\\* docs\\",
     "docker:build": "docker build -t bettertaxai .",
     "docker:run": "docker run -p 3000:3000 bettertaxai",
     "docker:dev": "docker-compose --profile dev up bettertaxai-dev",

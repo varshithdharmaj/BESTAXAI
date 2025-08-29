@@ -9,7 +9,7 @@ export default defineConfig(({ command, mode }) => {
 
   return {
     plugins: [react()],
-    base: isProduction ? '/BETTERTAXAI/' : '/',
+    base: process.env.DOCS_DEPLOY ? '/BETTERTAXAI/' : isProduction ? '/BETTERTAXAI/' : '/',
     resolve: {
       alias: {
         "@": path.resolve(__dirname, "./src"),
