@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://varshithdharmaj.github.io/bettertaxai",
+  "homepage": "https://varshithdharmaj.github.io/BETTERTAXAI",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
