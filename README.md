@@ -1,4 +1,4 @@
-# BETTERTAXAI 🚀
+# BESTTAXAI 🚀
 
 Professional AI-powered tax filing website built with React, TypeScript, and Tailwind CSS.
 
