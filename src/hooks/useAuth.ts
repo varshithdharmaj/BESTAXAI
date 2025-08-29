@@ -5,6 +5,7 @@ export function useAuth() {
   const { data: user, isLoading } = useQuery<User>({
     queryKey: ["/api/auth/user"],
     retry: false,
+    enabled: false, // Disable automatic query execution
     queryFn: () => {
       // Mock user data for development
       return Promise.resolve({
@@ -20,9 +21,21 @@ export function useAuth() {
     },
   });
 
+  // For demo purposes, return a mock authenticated user
+  const mockUser: User = {
+    id: "1",
+    firstName: "John",
+    lastName: "Doe",
+    email: "john.doe@example.com",
+    profileImageUrl: "",
+    role: "user" as const,
+    createdAt: new Date(),
+    updatedAt: new Date(),
+  };
+
   return {
-    user,
-    isLoading,
-    isAuthenticated: !!user,
+    user: mockUser,
+    isLoading: false,
+    isAuthenticated: true,
   };
 }
