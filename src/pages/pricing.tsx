@@ -4,7 +4,7 @@ import Footer from "@/components/footer";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import type { PricingPlan } from "@shared/schema";
+import type { PricingPlan } from "@/types/schema";
 
 export default function Pricing() {
   const { data: pricingPlans, isLoading } = useQuery<PricingPlan[]>({

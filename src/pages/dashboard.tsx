@@ -11,7 +11,7 @@ import { Progress } from "@/components/ui/progress";
 import { Badge } from "@/components/ui/badge";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Calendar, FileText, Receipt, Percent, Upload, Calculator, Bus, BarChart } from "lucide-react";
-import type { ItrForm, GstReturn, TdsReturn, Document } from "@shared/schema";
+import type { ItrForm, GstReturn, TdsReturn, Document } from "@/types/schema";
 
 interface DashboardStats {
   totalItrForms: number;

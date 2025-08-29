@@ -18,7 +18,7 @@ import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from "
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from "zod";
-import type { TdsReturn } from "@shared/schema";
+import type { TdsReturn } from "@/types/schema";
 
 const tdsReturnSchema = z.object({
   tan: z.string().min(10, "Valid TAN is required"),

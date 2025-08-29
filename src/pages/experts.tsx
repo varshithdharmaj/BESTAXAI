@@ -19,7 +19,7 @@ import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from "
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from "zod";
-import type { User, Consultation } from "@shared/schema";
+import type { User, Consultation } from "@/types/schema";
 
 const consultationSchema = z.object({
   expertId: z.string().min(1, "Please select an expert"),

@@ -18,7 +18,7 @@ import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from "
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from "zod";
-import type { GstReturn } from "@shared/schema";
+import type { GstReturn } from "@/types/schema";
 
 const gstReturnSchema = z.object({
   gstin: z.string().min(15, "Valid GSTIN is required"),

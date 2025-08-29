@@ -20,7 +20,7 @@ import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from "
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from "zod";
-import type { ItrForm } from "@shared/schema";
+import type { ItrForm } from "@/types/schema";
 
 const itrFormSchema = z.object({
   formType: z.string().min(1, "Please select ITR form type"),
