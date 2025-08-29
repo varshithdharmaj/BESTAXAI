@@ -10,7 +10,12 @@
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+    "deploy": "gh-pages -d dist",
+    "deploy:github": "GITHUB_PAGES=true npm run build && gh-pages -d dist",
+    "docker:build": "docker build -t bettertaxai .",
+    "docker:run": "docker run -p 3000:3000 bettertaxai",
+    "docker:dev": "docker-compose --profile dev up bettertaxai-dev",
+    "docker:prod": "docker-compose up bettertaxai"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.0.0",
